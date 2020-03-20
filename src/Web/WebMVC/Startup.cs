@@ -129,6 +129,8 @@ namespace Microsoft.eShopOnContainers.WebMVC
         public static IServiceCollection AddCustomMvc(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddOptions();
+            // Options pattern in ASP.NET Core
+            // https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/options?view=aspnetcore-3.1
             services.Configure<AppSettings>(configuration);
             services.AddSession();
             services.AddDistributedMemoryCache();

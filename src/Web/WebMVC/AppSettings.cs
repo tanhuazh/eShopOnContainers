@@ -8,7 +8,20 @@ namespace Microsoft.eShopOnContainers.WebMVC
     public class AppSettings
     {
         //public Connectionstrings ConnectionStrings { get; set; }
-        public string MarketingUrl { get; set; }
+
+        private string _marketingUrl;
+        public string MarketingUrl
+        {
+            get
+            {
+                return _marketingUrl;
+            }
+            set
+            {
+                _marketingUrl = value;
+            }
+        }
+
         public string PurchaseUrl { get; set; }
         public string SignalrHubUrl { get; set; }
         public bool ActivateCampaignDetailFunction { get; set; }
