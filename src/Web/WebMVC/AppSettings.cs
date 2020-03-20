@@ -22,7 +22,19 @@ namespace Microsoft.eShopOnContainers.WebMVC
             }
         }
 
-        public string PurchaseUrl { get; set; }
+        private string _purchaseUrl;
+        public string PurchaseUrl
+        {
+            get
+            {
+                return _purchaseUrl;
+            }
+            set
+            {
+                _purchaseUrl = value;
+            }
+        }
+
         public string SignalrHubUrl { get; set; }
         public bool ActivateCampaignDetailFunction { get; set; }
         public Logging Logging { get; set; }
