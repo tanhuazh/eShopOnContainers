@@ -20,7 +20,8 @@
         "BasketUrlHC": "http://localhost:58017/hc",
         "MarketingUrlHC": "http://localhost:63455/hc",
         "PaymentUrlHC": "http://localhost:63336/hc",
-        "LocationUrlHC": "http://localhost:54020/hc"
+        "LocationUrlHC": "http://localhost:54020/hc",
+        "IdentityUrlExternal": "http://localhost:54010/"
       }
     },
     "PurchaseForMvc": {
