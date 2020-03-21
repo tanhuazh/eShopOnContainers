@@ -13,7 +13,14 @@
       "launchBrowser": true,
       "launchUrl": "api/values",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "CatalogUrlHC": "http://localhost:57424/hc",
+        "OrderingUrlHC": "http://localhost:55102/hc",
+        "IdentityUrlHC": "http://localhost:54010/hc",
+        "BasketUrlHC": "http://localhost:58017/hc",
+        "MarketingUrlHC": "http://localhost:63455/hc",
+        "PaymentUrlHC": "http://localhost:63336/hc",
+        "LocationUrlHC": "http://localhost:54020/hc"
       }
     },
     "PurchaseForMvc": {
