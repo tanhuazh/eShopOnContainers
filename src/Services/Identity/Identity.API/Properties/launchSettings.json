@@ -11,8 +11,9 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "http://localhost:55105",
+      "launchUrl": "swagger",
       "environmentVariables": {
+        "ConnectionString": "Server=localhost;Initial Catalog=Database=Microsoft.eShopOnContainers.Services.IdentityDb;Trusted_Connection=True;",
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
