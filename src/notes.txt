@@ -6,3 +6,9 @@
 
   Microsoft.eShopOnContainers.Services.CatalogDb database
   rabbitmq, using rabbitmq container
+
+* create or start rabbitmq
+
+  docker run -p 5672:5672 --name myrabbitmq rabbitmq:3-management-alpine
+
+  docker create -p 5672:5672 --name myrabbitmq rabbitmq:3-management-alpine
