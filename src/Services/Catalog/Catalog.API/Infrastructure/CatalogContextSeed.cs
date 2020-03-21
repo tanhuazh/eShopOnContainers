@@ -29,6 +29,9 @@
                 var contentRootPath = env.ContentRootPath;
                 var picturePath = env.WebRootPath;
 
+                // this seed data solution is not good,
+                // unsafe for data migration
+
                 if (!context.CatalogBrands.Any())
                 {
                     await context.CatalogBrands.AddRangeAsync(useCustomizationData
