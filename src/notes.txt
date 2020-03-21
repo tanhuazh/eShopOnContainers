@@ -12,3 +12,7 @@
   docker run -p 5672:5672 --name myrabbitmq rabbitmq:3-management-alpine
 
   docker create -p 5672:5672 --name myrabbitmq rabbitmq:3-management-alpine
+
+* Microsoft Identity Server documentation
+
+  https://identityserver4.readthedocs.io/en/latest/
