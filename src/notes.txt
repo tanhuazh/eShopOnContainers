@@ -1,0 +1,4 @@
+* Catalog.API microservice essential dependencies:
+
+  Microsoft.eShopOnContainers.Services.CatalogDb database
+  rabbitmq, using rabbitmq container
