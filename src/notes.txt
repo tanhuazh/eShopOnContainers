@@ -1,3 +1,7 @@
+* if docker commands are really slow,
+
+  disable IPv6 on all network connections.
+
 * Catalog.API microservice essential dependencies:
 
   Microsoft.eShopOnContainers.Services.CatalogDb database
