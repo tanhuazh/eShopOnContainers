@@ -28,3 +28,11 @@
 
   https://docs.docker.com/compose/networking/
 
+* access host network from container,
+
+  use "host.docker.internal" host name,
+  envoy proxy only runs under linux,
+  we want to configure it to access web apis running in iisexpress on host.
+
+
+
