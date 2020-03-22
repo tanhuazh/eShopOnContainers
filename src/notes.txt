@@ -40,3 +40,21 @@
 * docker, execute commands in container
 
   docker exec -it 64c4d771a91b sh
+  apk add curl
+  curl -X GET "http://host.docker.internal:57424/api/v1/Catalog/items?pageSize=10" -H "accept: text/plain"
+
+* to allow iisexpress to accept external requests
+
+  reference:
+  https://blog.kloud.com.au/2017/02/27/remote-access-to-local-aspnet-core-apps-from-mobile-devices/
+  https://stackoverflow.com/questions/4866547/binding-iis-express-to-an-ip-address
+
+  solution:
+  open ".vs\eShopOnContainers-ServicesAndWebApps\config\applicationhost.config" under soltion folder
+  find site binding, for example "<binding protocol="http" bindingInformation="*:57424:localhost" />"
+  change it to "<binding protocol="http" bindingInformation="*:57424:" />"
+  this allows iisexpress to accept external requests
+
+  AND START VISUAL STUDIO IN ADMINISTRATOR MODE!!!!!
+
+  
