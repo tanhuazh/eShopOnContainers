@@ -64,4 +64,10 @@
   once it is authenticated, the action executes,
   this applies to "AccountController.SignIn" controller action as well.
 
+* Identity_API unauthorized_client issue:
+
+  https://github.com/dotnet-architecture/eShopOnContainers/issues/1236
+
+  add "MvcClient" client url to the launchSettings environment variables
+
   
