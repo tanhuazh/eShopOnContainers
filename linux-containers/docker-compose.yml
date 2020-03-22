@@ -6,4 +6,5 @@ services:
     image: rabbitmq:3-management-alpine
 
   webshoppingapigw:
-    image: envoyproxy/envoy:v1.11.1
+    image: envoyproxy/envoy-alpine
+
