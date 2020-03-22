@@ -16,3 +16,15 @@
 * Microsoft Identity Server documentation
 
   https://identityserver4.readthedocs.io/en/latest/
+
+* docker compose network
+
+  the service name(container name) in services of docker-compose.yml
+  is also the host name in the private network created for docker compose.
+
+  By default Compose sets up a single network for your app.
+  Each container for a service joins the default network and is both reachable by other containers on that network,
+  and discoverable by them at a hostname identical to the container name.
+
+  https://docs.docker.com/compose/networking/
+
