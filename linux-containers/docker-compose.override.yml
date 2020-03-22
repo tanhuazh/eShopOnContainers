@@ -4,12 +4,12 @@ services:
 
   rabbitmq:
     ports:
-    - "15672:15672"
-    - "5672:5672"
+    - "25672:15672"
+    - "6672:5672"
 
   webshoppingapigw:
     volumes:
     - ./ApiGateways/Envoy/config/webshopping:/etc/envoy
     ports:
-    - "5202:80"
-    - "15202:8001"
+    - "6202:80"
+    - "25202:8001"
