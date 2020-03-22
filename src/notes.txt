@@ -34,5 +34,5 @@
   envoy proxy only runs under linux,
   we want to configure it to access web apis running in iisexpress on host.
 
-
-
+* all environment changes to be put in launchSettings.json,
+  this makes sure other development environment is not affected
