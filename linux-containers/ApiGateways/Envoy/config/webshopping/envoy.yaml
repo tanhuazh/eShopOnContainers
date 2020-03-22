@@ -156,7 +156,7 @@ static_resources:
     lb_policy: round_robin
     hosts:
     - socket_address:
-        address: host.for.win.localhost
+        address: host.docker.internal
         port_value: 57424
   - name: basket
     connect_timeout: 0.25s
