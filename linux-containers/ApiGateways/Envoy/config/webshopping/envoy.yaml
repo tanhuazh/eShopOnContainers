@@ -53,13 +53,14 @@ static_resources:
                   prefix: "/c/"
                 route:
                   auto_host_rewrite: true
-                  prefix_rewrite: "/catalog-api/"
+                  prefix_rewrite: "/"
                   cluster: catalog
               - name: "c-long"
                 match:
                   prefix: "/catalog-api/"
                 route:
                   auto_host_rewrite: true
+                  prefix_rewrite: "/"
                   cluster: catalog
               - name: "o-short"
                 match:
@@ -152,7 +153,8 @@ static_resources:
         port_value: 57425
   - name: catalog
     connect_timeout: 0.25s
-    type: strict_dns
+    type: LOGICAL_DNS
+    dns_lookup_family: V4_ONLY
     lb_policy: round_robin
     hosts:
     - socket_address:
