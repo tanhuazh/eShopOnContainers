@@ -36,3 +36,7 @@
 
 * all environment changes to be put in launchSettings.json,
   this makes sure other development environment is not affected
+
+* docker, execute commands in container
+
+  docker exec -it 64c4d771a91b sh
