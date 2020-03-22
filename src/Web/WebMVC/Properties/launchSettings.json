@@ -14,7 +14,7 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
         "IdentityUrlHC": "http://localhost:5105/hc",
-        "PurchaseUrl": "http://localhost:5202"
+        "PurchaseUrl": "http://localhost:6202"
       }
     },
     "Microsoft.eShopOnContainers.WebMVC": {
