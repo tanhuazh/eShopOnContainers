@@ -15,7 +15,8 @@
       "environmentVariables": {
         "ConnectionString": "Server=localhost;Initial Catalog=Microsoft.eShopOnContainers.Services.IdentityDb;Trusted_Connection=True;",
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "MvcClient": "http://localhost:62680"
+        "MvcClient": "http://localhost:62680",
+        "SpaClient": "http://localhost:58018"
       }
     },
     "eShopOnContainers.Identity": {
