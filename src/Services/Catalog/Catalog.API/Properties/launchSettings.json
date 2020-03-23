@@ -17,6 +17,7 @@
         "Serilog:LogstashgUrl": "http://locahost:8080",
         "ASPNETCORE_ENVIRONMENT": "Development",
         "EventBusConnection": "localhost",
+        "RabbitMQPort": "6672",
         "Serilog:SeqServerUrl": "http://locahost:5340"
       }
     },

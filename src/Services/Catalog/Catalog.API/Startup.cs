@@ -311,6 +311,11 @@ namespace Microsoft.eShopOnContainers.Services.Catalog.API
                         factory.Password = configuration["EventBusPassword"];
                     }
 
+                    if (!string.IsNullOrEmpty(configuration["RabbitMQPort"]))
+                    {
+                        factory.Port = int.Parse(configuration["RabbitMQPort"]);
+                    }
+
                     var retryCount = 5;
                     if (!string.IsNullOrEmpty(configuration["EventBusRetryCount"]))
                     {
