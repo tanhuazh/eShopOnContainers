@@ -70,4 +70,9 @@
 
   add "MvcClient" client url to the launchSettings environment variables
 
-  
+* Identity Server login works in Edge and IE, but not in Chrome
+
+  [Authorize(AuthenticationSchemes = "OpenIdConnect")] of AccountController.SignIn(WebMVC) redirects to IdentityServer
+  after login, Identity server redirects to /connect/authorize/callback?client_id=mvc&redirect_uri=http://localhost://signin-oidc
+  and then, it redirects to http://localhost://signin-oidc
+  AccountController.SignIn(WebMVC) is called, user is signed in
