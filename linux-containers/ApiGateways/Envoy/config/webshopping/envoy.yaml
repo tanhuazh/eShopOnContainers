@@ -87,13 +87,14 @@ static_resources:
                   prefix: "/b/"
                 route:
                   auto_host_rewrite: true
-                  prefix_rewrite: "/basket-api/"
+                  prefix_rewrite: "/"
                   cluster: basket
               - name: "b-long"
                 match:
                   prefix: "/basket-api/"
                 route:
                   auto_host_rewrite: true
+                  prefix_rewrite: "/"
                   cluster: basket
               - name: "agg"
                 match:

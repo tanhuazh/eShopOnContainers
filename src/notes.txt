@@ -57,6 +57,13 @@
 
   AND START VISUAL STUDIO IN ADMINISTRATOR MODE!!!!!
 
+  External Network Access to Kestrel and IIS Express in ASP.NET Core
+
+  https://weblog.west-wind.com/posts/2016/sep/28/external-network-access-to-kestrel-and-iis-express-in-aspnet-core
+
+  or change applicationUrl in launchSettings to "http://[::]/12345",
+  then the corresponding binding in applicationhost.config is correct
+
 * WebMVC authentication,
 
   in Startup, AddOpenIdConnect adds OpenIdConnect authentication

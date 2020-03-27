@@ -154,6 +154,11 @@ namespace Microsoft.eShopOnContainers.Services.Basket.API
                         factory.Password = Configuration["EventBusPassword"];
                     }
 
+                    if (!string.IsNullOrEmpty(Configuration["RabbitMQPort"]))
+                    {
+                        factory.Port = int.Parse(Configuration["RabbitMQPort"]);
+                    }
+
                     var retryCount = 5;
                     if (!string.IsNullOrEmpty(Configuration["EventBusRetryCount"]))
                     {
