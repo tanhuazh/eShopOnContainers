@@ -18,7 +18,8 @@
         "ASPNETCORE_ENVIRONMENT": "Development",
         "EventBusConnection": "localhost",
         "RabbitMQPort": "6672",
-        "Serilog:SeqServerUrl": "http://locahost:5340"
+        "Serilog:SeqServerUrl": "http://locahost:5340",
+        "PicBaseUrl": "http://localhost:57424/api/v1/catalog/items/[0]/pic/"
       }
     },
     "Microsoft.eShopOnContainers.Services.Catalog.API": {
