@@ -8,3 +8,6 @@ services:
   webshoppingapigw:
     image: envoyproxy/envoy-alpine
 
+  basketdata:
+    image: redis:alpine
+

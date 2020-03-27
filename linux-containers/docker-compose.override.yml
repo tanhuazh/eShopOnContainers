@@ -14,3 +14,12 @@ services:
     - "6202:80"
     - "25202:8001"
     - "7202:10000"
+  basketdata:
+    ports:
+      - "7379:6379"
+    volumes:
+      - eshop-basketdata:/data
+
+volumes:
+  eshop-basketdata:
+    external: false
