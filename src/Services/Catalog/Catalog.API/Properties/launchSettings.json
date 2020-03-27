@@ -3,7 +3,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:57424/",
+      "applicationUrl": "http://[::]:57424/",
       "sslPort": 0
     }
   },
@@ -11,7 +11,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "swagger",
+      "launchUrl": "http://localhost:57424/swagger",
       "environmentVariables": {
         "ConnectionString": "Server=localhost;Initial Catalog=Microsoft.eShopOnContainers.Services.CatalogDb;Trusted_Connection=True;",
         "Serilog:LogstashgUrl": "http://locahost:8080",
