@@ -11,9 +11,12 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "api/values",
+      "launchUrl": "swagger",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ConnectionString": "mongodb://localhost:37017",
+        "Database": "LocationsDb",
+        "IdentityUrlExternal": "http://localhost:54010/"
       }
     },
     "Locations.API": {

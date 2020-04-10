@@ -2,6 +2,12 @@ version: '3.4'
 
 services:
 
+  nosqldata:
+    ports:
+      - "37017:27017"
+    volumes:
+      - eshop-nosqldata:/data/db
+
   rabbitmq:
     ports:
     - "25672:15672"
@@ -21,5 +27,7 @@ services:
       - eshop-basketdata:/data
 
 volumes:
+  eshop-nosqldata:
+    external: false
   eshop-basketdata:
     external: false
