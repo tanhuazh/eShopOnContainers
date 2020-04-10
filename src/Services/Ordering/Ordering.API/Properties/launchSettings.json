@@ -11,9 +11,12 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "/swagger",
+      "launchUrl": "swagger",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ConnectionString": "Server=localhost;Initial Catalog=Microsoft.eShopOnContainers.Services.OrderingDb;Trusted_Connection=True;",
+        "RabbitMQPort": "6672",
+        "IdentityUrlExternal": "http://localhost:54010/"
       }
     },
     "Microsoft.eShopOnContainers.Services.Ordering.API": {
