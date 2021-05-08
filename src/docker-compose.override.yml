@@ -21,6 +21,7 @@ services:
       - "5433:1433"
     volumes:
       - eshop-sqldata:/var/opt/mssql
+    user: root
 
   nosqldata:
     ports:
