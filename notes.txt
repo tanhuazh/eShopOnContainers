@@ -1,0 +1,11 @@
+* sqldata container startup problem
+
+  https://github.com/microsoft/mssql-docker/issues/615
+
+  for simple solution: add "user: root" to run as root
+
+* WebSPA not working
+
+  go to eShopOnContainers\src\Web\WebSPA
+  yarn
+  ng build
